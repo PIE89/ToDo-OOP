@@ -33,7 +33,7 @@ export default class Model {
   }
 
   changeStatus(task) {
-    if ((task.status = "done")) {
+    if (task.status === "done") {
       task.status = "new";
     } else {
       task.status = "done";
